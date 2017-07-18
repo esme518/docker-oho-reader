@@ -3,7 +3,7 @@
 FROM mhart/alpine-node
 
 RUN set -ex \
-    && apk add --update --no-cache git \
+    && apk --update add --no-cache git \
     && rm -rf /var/cache/apk
 
 COPY docker-entrypoint.sh /entrypoint.sh
