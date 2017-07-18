@@ -1,5 +1,6 @@
 #!/bin/sh
 
+# Set environment
 if [ ! -d /git/oho-reader ]; then
 	mkdir /git
 	cd /git
