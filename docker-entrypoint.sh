@@ -10,6 +10,10 @@ if [ ! -d /git/oho-reader ]; then
 	cd /git/oho-reader
 	npm install
 	npm run dist
+elif [ -n "$TEST" ]; then
+	cd /git/oho-reader
+	npm install
+	npm run dist
 fi
 
 cd /git/oho-reader/dist
