@@ -22,4 +22,6 @@ EXPOSE $PORT/tcp
 
 ENTRYPOINT ["/entrypoint.sh"]
 
-CMD ["node", "/etc/git/oho-reader/dist/app.js"]
+WORKDIR /etc/git/oho-reader/dist
+
+CMD ["node", "app.js"]
